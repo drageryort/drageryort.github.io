@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интернет магазин</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>	
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-0 col-md-3 col-xs-12">
+					<div class="logo"><a href="#"><img src="images/logo.png" alt="Logoshop" title="Logo"></a></div>
+				</div>
+				<div class="col-xs-2 hidden-md hidden-lg">
+					<button class="hamburger_menu_button" id="hamburger_menu_button"></button>
+				</div>
+				<div class="col-md-6 hidden-xs">
+					<ul class="navigation">
+						<li class="main_menu"><a class="main_menu_a" href="">Home</a></li>  
+						<li class="main_menu"><a class="main_menu_a" href="">Products</a><a href="#" class="arrow_in_header"></a>
+							<ul class="list">
+								<li class="list_element"><a href="#">Lorem ipsum dolor</a></li>
+								<li class="list_element"><a href="#">Sit amet</a></li>
+								<li class="list_element"><a href="#">Consectetur adipisicing</a></li>
+								<li class="list_element"><a href="#">Tempor incididunt</a></li>
+								<li class="list_element"><a href="#">Dolore magna aliqua</a></li>
+								<li class="list_element"><a href="#">Ut enim ad minim veniam</a></li>
+								<li class="list_element"><a href="#">Quis nostrud</a></li>
+							</ul>
+						</li>
+						<li class="main_menu"><a class="main_menu_a" href="">Payments</a></li>  
+						<li class="shipping main_menu"><a class="main_menu_a" href="">Shipping</a></li> 
+					</ul>
+				</div>	
+				<div class="col-md-3 col-xs-10">
+					<div class="row">
+						<div class="col-md-9 col-xs-8">
+							<div class="search_block">
+								<input type="search" placeholder="search" name="search" class="search_field">
+								<button class="search_button">
+									<img src="images/search.png" alt="search_sign" title="search_sign" class="search_sign">
+								</button>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-4">
+							<div class="basket_block ">
+								<div><img src="images/box_full.png" alt="box_full" title="box_full" class="box"></div>
+								<div class="amount" id="products-count">0</div>
+							</div>	
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>		
+	</header>
+	<div class="menu_block hidden-md hidden-lg">	
+		<div class="container">
+			<div class="row">		
+				<div class="col-xs-12">
+					<ul class="navigation">
+						<li class="main_menu"><a class="main_menu_a">Home</a></li>  
+						<li class="main_menu" id="sub_menu"><a class="main_menu_a">Products</a><a href="#" class="arrow_in_header"></a>
+							<ul class="list">
+								<li class="list_element"><a href="#">Lorem ipsum dolor</a></li>
+								<li class="list_element"><a href="#">Sit amet</a></li>
+								<li class="list_element"><a href="#">Consectetur adipisicing</a></li>
+								<li class="list_element"><a href="#">Tempor incididunt</a></li>
+								<li class="list_element"><a href="#">Dolore magna aliqua</a></li>
+								<li class="list_element"><a href="#">Ut enim ad minim veniam</a></li>
+								<li class="list_element"><a href="#">Quis nostrud</a></li>
+							</ul>
+						</li>
+						<li class="main_menu"><a class="main_menu_a" href="">Payments</a></li>  
+						<li class="shipping main_menu"><a class="main_menu_a" href="">Shipping</a></li> 
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="slider col-md-offset-0 col-md-12 col-xs-offset-1 col-xs-10 col-xs-offset-1">
+	  				<div>first slide</div>
+	  				<div>second slide</div>
+	  				<div>third slide</div>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-0 col-md-3 col-xs-offset-2 col-xs-9 col-xs-offset-1">
+					<form action="" class="choosing_device_specifications">
+						<ul><span class="capital_letters">Device type</span>
+							<li>
+								<input type="checkbox" name="device_type" id="Device_type_Laptop"><label for="Device_type_Laptop"><span>Laptop</span></label>
+							</li>
+							<li>
+								<input type="checkbox" name="device_type" id="Device_type_Tablet"><label for="Device_type_Tablet"><span>Tablet</span></label>		
+							</li>	
+						</ul>
+						<ul><span class="capital_letters">Color</span>
+							<li>
+								<input type="checkbox" name="device_color" id="Device_color_black"><label for="Device_color_black"><span>Black</span></label>
+							</li>
+							<li>
+								<input type="checkbox" name="device_color" id="Device_color_red"><label for="Device_color_red"><span>Red</span></label>								
+							</li>
+							<li>
+								<input type="checkbox" name="device_color" id="Device_color_green"><label for="Device_color_green"><span>Green</span></label>
+							</li>
+							<li>
+								<input type="checkbox" name="device_color" id="Device_color_blue"><label for="Device_color_blue"><span>Blue</span></label>								
+							</li>
+							<li>
+								<input type="checkbox" name="device_color" id="Device_color_orange"><label for="Device_color_orange"><span>Orange</span></label>
+							</li>
+						</ul>		
+						<ul class="ram"><span class="capital_letters">Ram</span>
+							<li>
+								<input type="checkbox" name="device_Ram" id="Ram_size_1gb"><label for="Ram_size_1gb"><span class="capital_letters">1gb</span></label>
+							</li>
+							<li>
+								<input type="checkbox" name="device_Ram" id="Ram_size_2gb"><label for="Ram_size_2gb"><span class="capital_letters">2gb</span></label>								
+							</li>
+							<li>
+								<input type="checkbox" name="device_Ram" id="Ram_size_4gb"><label for="Ram_size_4gb"><span class="capital_letters">4gb</span></label>
+							</li>
+							<li>
+								<input type="checkbox" name="device_Ram" id="Ram_size_6gb"><label for="Ram_size_6gb"><span class="capital_letters">6gb</span></label>								
+							</li>
+							<li>
+								<input type="checkbox" name="device_Ram" id="Ram_size_8gb"><label for="Ram_size_8gb"><span class="capital_letters">8gb</span></label>
+							</li>
+						</ul>
+						<p><a href="#">Show more options ...</a></p>
+						<input type="submit" name="submit" value="submit" class="submit_button capital_letters">
+					</form>
+				</div>
+				<div class="col-md-9 col-xs-12">
+					<div class="main_block">
+						<div class="row">
+							<div class="col-md-8 col-xs-12">
+								<div class="page_title_block">
+									<p class="breadcrumbs"><a href="#">Home page</a> > <a href="#">Products</a> > Laptops and Tablets</p>
+									<p class="page_title">Laptops and Tablets</p>
+								</div>
+							</div>	
+							<div class="col-md-4 col-xs-12">
+								<div class="sort_filter">
+									<select>
+										<option>sort by price</option>
+										<option>sort by name</option>
+										<option>sort by date</option>
+										<option>sort by popularity</option>
+									</select>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon17.png" alt="monoblock" title="Моноблок">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button> 
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#1 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$599 <span>25</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon9.png" alt="tuner" title="Тюнер">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>							
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#2 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$1250 <span>99</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon10.png" alt="smartwatch" title="Смарт часы">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#3 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$399 <span>50</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon16.png" alt="notebook" title="Ноутбук">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#1 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$599 <span>25</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon14.png" alt="mp3player" title="MP3 плеер">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#2 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$1250 <span>99</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon12.png" alt="mobile phone" title="Мобильный телефон">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#3 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$399 <span>50</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon15.png" alt="pad" title="Планшет">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#1 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$599 <span>25</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon11.png" alt="tuner" title="Тюнер">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#2 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$1250 <span>99</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12">
+								<div class="product">
+									<div class="product_image_block">
+										<img src="images/icon13.png" alt="smartwatch" title="Смарт часы">
+										<a href="#" class="square_button"></a>
+										<button class="like_button"></button>
+									</div>
+									<div class="product_text_block">
+										<div class="description_block">
+											<h2>#3 Device Name</h2>
+											<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+											<p><span class="capital_letters">Type:</span> Laptop</p>
+											<p><span class="capital_letters">Screen size:</span> 7 inches</p>
+											<p><span class="capital_letters">Ram:</span> 1GB</p>
+										</div>
+										<p class="price">$399 <span>50</span></p>
+										<button class="capital_letters details">more details</button>
+										<button class="capital_letters add_to_cart">add to cart <img src="images/box_empty.png"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-offset-4 col-md-4 col-md-offset-4 col-xs-12">
+								<div class="load_more_part">
+									<a href="#">Load more ...</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-5 col-md-2 col-md-offset-5 col-xs-offset-2 col-xs-8 col-xs-offset-2">
+					<p>&#169; Copyright 2017</p>
+				</div>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>
