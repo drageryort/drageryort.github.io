@@ -324,6 +324,12 @@ input::-webkit-input-placeholder{color:#989898;
 	color: black;
 	font-size: 17.65px;
 }
+main
+{
+	width: 100%;
+	background-size: cover;
+
+}
 .about_us_block{
 	background: url(..//images/about_us_block_background.png);
 	height: 707px;	
