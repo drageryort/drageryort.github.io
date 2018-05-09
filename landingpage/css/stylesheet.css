@@ -3,8 +3,15 @@
 	margin:0;
 	padding:0; 
 }
+a{
+	cursor: pointer;
+	color: rgb(0, 224, 208);
+}
+a:hover{
+	text-decoration: none;
+}
 .header{
-	background-image:url("../images/headerBackground.png");
+	background-image:url("../images/headerForestBackground.png");
 	height: 670px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -20,7 +27,6 @@
 }
 .navList li{
 	float: left;
-	color:white;
 	list-style: none;
 	margin-right: 18px;
 }
@@ -35,6 +41,9 @@
 	line-height: 1.2;
 	text-align: right;
 	text-transform: uppercase;
+}
+.navList a:hover{
+	color:rgb(0, 224, 208);
 }
 .headerTitle{
 	font-size: 32px;
@@ -455,6 +464,9 @@
 	line-height: 1.857;
 	text-align: left;
 	text-transform: uppercase;
+}
+.copyrights a:hover{
+	color:rgb(0, 224, 208);
 }
 .copyrights p{
 	margin: 0;
