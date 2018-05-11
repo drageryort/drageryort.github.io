@@ -74,7 +74,6 @@ button:hover{
 	line-height: 1.2;
 	text-align: center;
 	margin-top: 183px;
-	height: 31px;
 }
 .headerSeparator{
 	margin: 21px auto 30px;
@@ -134,14 +133,12 @@ button:hover{
 .ourStoryVideo{
 	height: 100%;
 	width:100%;
-
 }
 iframe{
 	width: 100%;
 	height: 100%;
 	padding: 3% 19.5%;
 }
-
 .expertiseBlock h2 {
   	font-size: 22px;
   	font-family: "Playfair Display";
@@ -308,18 +305,11 @@ iframe{
 	margin-bottom: 70px;
 }
 .ourWorksGalleryElement{
-	height: 200px;
 	padding: 0;
+}
+.ourWorksGalleryElement img{
+	width: 100%;
 	display: block;
-}
-.ourWorksGalleryElement.darkGrey{
-	background-color: rgba(138, 138, 138);
-}
-.ourWorksGalleryElement.grey{
-	background-color: rgba(161, 161, 161);
-}
-.ourWorksGalleryElement.lightGrey{
-	background-color: rgba(182, 182, 182);
 }
 .ourWorksBlock button{
   	width: 138px;
