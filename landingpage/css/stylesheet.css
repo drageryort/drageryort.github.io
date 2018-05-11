@@ -121,12 +121,27 @@ button:hover{
 	height: 38px;
 	margin-bottom: 70px; 
 }
-.ourStoryVideo{
+.ourStoryVideoBlock{
 	background-image:url("../images/ourStoryVideoBackground.png");
 	height: 550px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.videoBlock{
+	height: 100%;
+	width: 100%;
+}
+.ourStoryVideo{
+	height: 100%;
+	width:100%;
+
+}
+iframe{
+	width: 100%;
+	height: 100%;
+	padding: 3% 19.5%;
+}
+
 .expertiseBlock h2 {
   	font-size: 22px;
   	font-family: "Playfair Display";
