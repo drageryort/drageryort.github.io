@@ -239,6 +239,16 @@ iframe{
 	background-color: white;
 	margin: 0 auto;
 }
+.meetOurAmazingTeamBlockElement img:hover{
+	transform: rotateY(360deg);
+	-webkit-transform:rotateY(360deg);
+	-moz-transform:rotateY(360deg);
+	-ms-transform:rotateY(360deg);
+	-o-transform:rotateY(360deg);
+	transition: transform 5s;
+	-webkit-transition: transform 5s;
+	-moz-transition: transform 5s;
+}
 .meetOurAmazingTeamBlockElement h4{
   	font-size: 14px;
   	font-family: "Roboto";
@@ -309,6 +319,20 @@ iframe{
 .ourWorksGalleryElement img{
 	width: 100%;
 	display: block;
+}
+.ourWorksGalleryElement img:hover{
+	transform: scale(1.5);
+	-webkit-transform:scale(1.5);
+	-moz-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	transition: transform 3s;
+	-webkit-transition: transform 3s;
+	-moz-transition: transform 3s;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2;
 }
 .ourWorksBlock button{
   	width: 138px;
