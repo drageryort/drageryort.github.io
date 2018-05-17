@@ -1,0 +1,173 @@
+.wrapper{
+	background-color: rgb(23, 176, 174); 
+	background-image: url(../images/mainBackgroundImage.png);
+	width: 100%;
+  	height: 900px; 
+  	padding-top: 300px;
+}
+.leftButton {
+	float:left;
+	width: 20%;
+}
+
+.leftButton button{
+	-o-transform: perspective(300px) rotateY(30deg);
+	-ms-transform: perspective(300px) rotateY(30deg);
+	-moz-transform: perspective(300px) rotateY(30deg);
+	-webkit-transform: perspective(300px) rotateY(30deg);
+	transform: perspective(300px) rotateY(30deg);
+}
+.leftButton p, .rightButton p{
+	height: 68px;
+	line-height: 68px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	text-align: center;
+	width: 90px;
+}
+.leftButton p{
+	background-image: url(../images/backArrow.png);
+	background-position-x: left; 
+}
+
+.rightButton button{
+	-o-transform: perspective(300px) rotateY(-30deg);
+	-ms-transform: perspective(300px) rotateY(-30deg);
+	-moz-transform: perspective(300px) rotateY(-30deg);
+	-webkit-transform: perspective(300px) rotateY(-30deg);
+	transform: perspective(300px) rotateY(-30deg);
+}
+.rightButton{
+	float: right;
+	width: 20%;
+}
+.rightButton p{
+	background-image: url(../images/forwardArrow.png);
+	background-position-x: right; 
+
+}
+button{
+  	font-size: 18px;
+  	font-family: "Neuron";
+  	color: rgb(245, 248, 247);
+  	text-transform: uppercase;
+  	line-height: 2.785;
+  	text-align: center;
+	box-sizing: content-box;
+  	border-style: solid;
+  	border-width: 2px;
+  	border-color: rgb(245, 248, 247);
+  	background-color: transparent;
+  	width: 153px;
+  	height: 68px;
+  	display: block;
+  	margin:50px auto auto;
+  	border-radius: 4px;
+}
+button:hover{
+	background-color: rgb(245, 248, 247);
+	color: rgb(28, 181, 177) 
+}
+#leftButton:hover p{
+	background-image: url(../images/backArrowHover.png);
+}
+#rightButton:hover p{
+	background-image: url(../images/fowardArrowHover.png);
+}
+
+.sliderWrapper{
+	float: left;
+	width: 60%;
+}
+.sliderField{
+	width: 555px;
+	margin: 0 auto;
+}
+.sliderField .boyIcon{
+	border-style: solid;
+  	border-width: 3px;
+  	border-color: rgb(255, 255, 255);
+  	border-radius: 50%;
+  	background-color: rgb(48, 195, 186);
+  	opacity: 0.5;
+  	width: 139px;
+  	height: 141px;
+  	float:left;
+  	position: relative;
+}
+.boyWithoutScarf{
+	display: block;
+	position: absolute;
+	bottom:0px;
+	left:39px;
+}
+.boyWithScarf{
+	display: block;
+	position: absolute;
+	bottom:0px;
+	right:-25px; 
+}
+.boyIcon{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.boyIcon:last-child{
+	display: none;
+}
+.boyIcon:hover img{
+	animation-name: jumpUp;
+    -webkit-animation-name: jumpUp;    
+ 
+    animation-duration: 1.5s; 
+    -webkit-animation-duration: 1.5s;
+ 
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+ 
+    visibility: visible !important;
+}
+@keyframes jumpUp {
+    0% {
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-8px);
+    }           
+    100% {
+        transform: translateY(0px);
+    }      
+}
+@-webkit-keyframes jumpUp {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    30%{
+        -webkit-transform: translateY(-20px);
+    }
+    50%{
+        -webkit-transform: translateY(0px);
+    }
+    75%{
+        -webkit-transform: translateY(-8px);
+    }           
+    100% {
+        -webkit-transform: translateY(0px);
+    }   
+}
+.sliderField:after {
+	clear: both;
+	content: "";
+	display: block; 
+}
+.sliderBlock:after{
+	clear: both;
+	content: "";
+	display: block;
+}
