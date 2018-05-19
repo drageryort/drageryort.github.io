@@ -2,8 +2,8 @@
 	background-color: rgb(23, 176, 174); 
 	background-image: url(../images/mainBackgroundImage.png);
 	width: 100%;
-  	height: 900px; 
-  	padding-top: 300px;
+  height: 900px; 
+  padding-top: 300px;
 }
 .leftButton {
 	float:left;
@@ -48,22 +48,22 @@
 
 }
 button{
-  	font-size: 18px;
-  	font-family: "Neuron";
-  	color: rgb(245, 248, 247);
-  	text-transform: uppercase;
-  	line-height: 2.785;
-  	text-align: center;
+  font-size: 18px;
+  font-family: "Neuron";
+  color: rgb(245, 248, 247);
+  text-transform: uppercase;
+  line-height: 2.785;
+  text-align: center;
 	box-sizing: content-box;
-  	border-style: solid;
-  	border-width: 2px;
-  	border-color: rgb(245, 248, 247);
-  	background-color: transparent;
-  	width: 153px;
-  	height: 68px;
-  	display: block;
-  	margin:50px auto auto;
-  	border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(245, 248, 247);
+  background-color: transparent;
+  width: 153px;
+  height: 68px;
+  display: block;
+  margin:50px auto auto;
+  border-radius: 4px;
 }
 button:hover{
 	background-color: rgb(245, 248, 247);
@@ -75,27 +75,38 @@ button:hover{
 #rightButton:hover p{
 	background-image: url(../images/fowardArrowHover.png);
 }
-
 .sliderWrapper{
 	float: left;
 	width: 60%;
 }
 .sliderField{
-	width: 555px;
+	width: 585px;
 	margin: 0 auto;
+  position: relative;
 }
-.sliderField .boyIcon{
+.boyIconWrapper{
+  width: 139px;
+  height: 141px;
+  position:absolute;
+}
+.boyIcon{
 	border-style: solid;
-  	border-width: 3px;
-  	border-color: rgb(255, 255, 255);
-  	border-radius: 50%;
-  	background-color: rgb(48, 195, 186);
-  	opacity: 0.5;
-  	width: 139px;
-  	height: 141px;
-  	float:left;
-  	position: relative;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(48, 195, 186);
+  opacity: 0.5;
+  width: 139px;
+  height: 141px;
+  position: absolute;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+.boyIconLast{
+  display: none;
+}
+
 .boyWithoutScarf{
 	display: block;
 	position: absolute;
@@ -108,58 +119,51 @@ button:hover{
 	bottom:0px;
 	right:-25px; 
 }
-.boyIcon{
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.boyIcon:last-child{
-	display: none;
-}
 .boyIcon:hover img{
 	animation-name: jumpUp;
-    -webkit-animation-name: jumpUp;    
+  -webkit-animation-name: jumpUp;    
  
-    animation-duration: 1.5s; 
-    -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
  
-    animation-timing-function: ease;    
-    -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;    
+  -webkit-animation-timing-function: ease;
  
-    visibility: visible !important;
+  visibility: visible !important;
 }
 @keyframes jumpUp {
-    0% {
-        transform: translateY(0px);
-    }
-    30%{
-        transform: translateY(-20px);
-    }
-    50%{
-        transform: translateY(0px);
-    }
-    75%{
-        transform: translateY(-8px);
-    }           
-    100% {
-        transform: translateY(0px);
-    }      
+  0% {
+      transform: translateY(0px);
+  }
+  30%{
+      transform: translateY(-20px);
+  }
+  50%{
+      transform: translateY(0px);
+  }
+  75%{
+      transform: translateY(-8px);
+  }           
+  100%{
+      transform: translateY(0px);
+  }      
 }
 @-webkit-keyframes jumpUp {
-    0% {
-        -webkit-transform: translateY(0px);
-    }
-    30%{
-        -webkit-transform: translateY(-20px);
-    }
-    50%{
-        -webkit-transform: translateY(0px);
-    }
-    75%{
-        -webkit-transform: translateY(-8px);
-    }           
-    100% {
-        -webkit-transform: translateY(0px);
-    }   
+  0%{
+      -webkit-transform: translateY(0px);
+  }
+  30%{
+      -webkit-transform: translateY(-20px);
+  }
+  50%{
+      -webkit-transform: translateY(0px);
+  }
+  75%{
+      -webkit-transform: translateY(-8px);
+  }           
+  100%{
+      -webkit-transform: translateY(0px);
+  }   
 }
 .sliderField:after {
 	clear: both;
@@ -170,4 +174,169 @@ button:hover{
 	clear: both;
 	content: "";
 	display: block;
+}
+.boyIcon.iconFirstPosition{
+  left:0px;
+  transition: left 1.6s linear;
+}
+.boyIcon.iconSecondPosition{
+  left: 184px;
+  transition: left 1.6s linear;
+}
+.boyIcon.iconThirdPosition{
+  left: 368px;
+  transition: left 1.6s linear;
+}
+.boyIcon.iconFourthPosition{
+  opacity: 0;
+  left: 590px;
+  transition: left 1.6s linear;
+}
+.boyIcon.iconFifthPosition{
+  animation-name: sliderLeftEffectLeft;
+  -webkit-animation-name: sliderLeftEffectLeft; 
+
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+
+  animation-timing-function: linear;    
+  -webkit-animation-timing-function: linear;
+
+  left: 590px;
+  opacity: 0;
+}
+@keyframes sliderLeftEffectLeft {
+  0% {
+    left: 0px; 
+    opacity: 0.5;
+    transform: scaleY(1);
+  }
+  100%{
+    left: -210px;
+    opacity: 0;
+    transform: scaleY(1.2);
+  }      
+}
+@-webkit-keyframes sliderLeftEffectLeft {
+  0% {
+    left: 0px; 
+    opacity: 0.5;
+    -webkit-transform: scaleY(1);
+  }
+  100%{
+    left: -210px;
+    opacity: 0;
+    -webkit-transform: scaleY(1.2);
+  }      
+}
+.boyIcon.iconSixthPosition{
+  animation-name: sliderLeftEffectRight;
+  -webkit-animation-name: sliderLeftEffectRight;
+
+  animation-duration: 1.6s; 
+  -webkit-animation-duration: 1.6s; 
+
+  animation-timing-function: linear;    
+  -webkit-animation-timing-function: linear; 
+
+  left: 368px;
+  opacity: 0.5;
+}
+@keyframes sliderLeftEffectRight {
+  0% {
+    left: 590px; 
+    opacity: 0;
+    transform: scaleY(1.2);  
+  }
+  100%{
+    left: 368px;
+    opacity: 0.5;
+    transform: scaleY(1);
+  }
+}  
+@-webkit-keyframes sliderLeftEffectRight {
+  0% {
+    left: 590px; 
+    opacity: 0;
+    -webkit-transform: scaleY(1.2);  
+  }
+  100%{
+    left: 368px;
+    opacity: 0.5;
+    -webkit-transform: scaleY(1);
+  }
+}  
+.boyIcon.iconSeventhPosition{
+  animation-name: sliderRightEffectLeft;
+  -webkit-animation-name: sliderRightEffectLeft;
+
+  animation-duration: 1.6s; 
+  -webkit-animation-duration: 1.6s;
+
+  animation-timing-function: linear;    
+  -webkit-animation-timing-function: linear;
+
+  left: 0px;
+  opacity: 0.5;
+}
+@keyframes sliderRightEffectLeft {
+  0% {
+    left: -210px; 
+    opacity: 0;
+    transform: scaleY(1.2);
+  }
+  100%{
+    left: 0px;
+    opacity: 0.5;
+    transform: scaleY(1);
+  }      
+}
+@-webkit-keyframes sliderRightEffectLeft {
+  0% {
+    left: -210px; 
+    opacity: 0;
+    -webkit-transform: scaleY(1.2);
+  }
+  100%{
+    left: 0px;
+    opacity: 0.5;
+    -webkit-transform: scaleY(1);
+  }      
+}
+.boyIcon.iconEigthPosition{
+  animation-name: sliderRightEffectRight;
+  -webkit-animation-name: sliderRightEffectRight;
+  
+  animation-duration: 1.6s; 
+  -webkit-animation-duration: 1.6s;
+  
+  animation-timing-function: linear;    
+  -webkit-animation-timing-function: linear;
+
+  left: -210px;
+  opacity: 0;
+}
+@keyframes sliderRightEffectRight {
+  0% {
+    left: 368px; 
+    opacity: 0.5;
+    transform: scaleY(1);
+  }
+  100%{
+    left: 590px;
+    opacity: 0;
+    transform: scaleY(1.2);
+  }
+}  
+@-webkit-keyframes sliderRightEffectRight {
+  0% {
+    left: 368px; 
+    opacity: 0.5;
+    -webkit-transform: scaleY(1);
+  }
+  100%{
+    left: 590px;
+    opacity: 0;
+    -webkit-transform: scaleY(1.2);
+  }
 }

@@ -1,36 +1,77 @@
+var iconSlides = document.getElementsByClassName("boyIcon");
+
 document.addEventListener("DOMContentLoaded",function(event){
 
-	var slideNumber = 2;
+
 	var leftButton = document.getElementById("leftButton");
-	var rightButton = document.getElementById("rightButton");
-
-	rightButton.onclick = function(m){
-		var m = 1;
-		showingSlide(slideNumber += m)
-	}
-
-
 	leftButton.onclick = function(){
-		var m = 1;
-		showingSlide(slideNumber -= m)
+		leftSlider();
 	}
 
-	function showingSlide(m){
-		var i;
-		var iconSlides = document.getElementsByClassName("boyIcon");
-		
-		if (m > iconSlides.length) {
-			slideNumber = 1;
+	function leftSlider(){
+		for (i = 0; i < iconSlides.length; i++){
+			if (iconSlides[i].className == "boyIcon iconFirstPosition"){
+				iconSlides[i].className = "boyIcon iconFifthPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconSecondPosition"){
+					 iconSlides[i].className = "boyIcon iconFirstPosition";
+			} 
+			else if (iconSlides[i].className == "boyIcon iconThirdPosition"){
+					 iconSlides[i].className = "boyIcon iconSecondPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconFourthPosition"){
+					 iconSlides[i].className = "boyIcon iconSixthPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconFifthPosition"){
+					 iconSlides[i].className = "boyIcon iconSixthPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconSixthPosition"){
+					 iconSlides[i].className = "boyIcon iconSecondPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconSeventhPosition"){
+					 iconSlides[i].className = "boyIcon iconFifthPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconEigthPosition"){
+					 iconSlides[i].className = "boyIcon iconSixthPosition";
+			}
 		}
-
-		if (m < 1) {
-			slideNumber = iconSlides.length;
-		}
-
-		for (var i = 0; i < iconSlides.length; i++) {
-			iconSlides[i].style.display = "block";
-		}
-
-		iconSlides[slideNumber-1].style.display = "none";
 	}
+
+
+	var rightButton = document.getElementById("rightButton");
+	rightButton.onclick = function(){
+		rightSlider();
+	}
+
+	function rightSlider(){
+		for (i = 0; i < iconSlides.length; i++){
+			if (iconSlides[i].className == "boyIcon iconFirstPosition"){
+				iconSlides[i].className = "boyIcon iconSecondPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconSecondPosition"){
+					 iconSlides[i].className = "boyIcon iconThirdPosition";
+			} 
+			else if (iconSlides[i].className == "boyIcon iconThirdPosition"){
+					 iconSlides[i].className = "boyIcon iconEigthPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconFourthPosition"){
+					 iconSlides[i].className = "boyIcon iconSeventhPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconFifthPosition"){
+					 iconSlides[i].className = "boyIcon iconSeventhPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconSixthPosition"){
+					 iconSlides[i].className = "boyIcon iconEigthPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconSeventhPosition"){
+					 iconSlides[i].className = "boyIcon iconSecondPosition";
+			}
+			else if (iconSlides[i].className == "boyIcon iconEigthPosition"){
+					 iconSlides[i].className = "boyIcon iconSeventhPosition";
+			}
+		}
+	}
+
+
 });
+
