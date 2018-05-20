@@ -66,6 +66,8 @@ button{
   display: block;
   margin:113px auto auto;
   border-radius: 4px;
+  position: relative;
+  z-index: 2;
 }
 button:hover{
 	background-color: rgb(245, 248, 247);
@@ -199,41 +201,30 @@ button:hover{
 
   left: 590px;
   opacity: 0;
-  z-index: -1;
 }
 @keyframes sliderLeftEffectLeft {
   0% {
     left: 0px; 
     opacity: 0.5;
     transform: scaleY(1);
-    z-index: 0;
   }
-  99%{
+  100%{
     left: -210px;
     opacity: 0;
     transform: scaleY(1.2);
-    z-index: 0;
   }
-  100%{
-    z-index: -1;
-  }      
 }
 @-webkit-keyframes sliderLeftEffectLeft {
   0% {
     left: 0px; 
     opacity: 0.5;
     -webkit-transform: scaleY(1);
-    z-index: 0;
   }
-  99%{
+  100%{
     left: -210px;
     opacity: 0;
     -webkit-transform: scaleY(1.2);
-    z-index: 0;
   }      
-  100%{
-    z-index: -1;
-  }   
 }
 .boyIcon.iconSixthPosition{
   animation-name: sliderLeftEffectRight;
@@ -321,23 +312,17 @@ button:hover{
 
   left: -210px;
   opacity: 0;
-  z-index: -1;
 }
 @keyframes sliderRightEffectRight {
   0% {
     left: 368px; 
     opacity: 0.5;
     transform: scaleY(1);
-    z-index: 0;
   }
-  99%{
+  100%{
     left: 590px;
     opacity: 0;
     transform: scaleY(1.2);
-    z-index: 0;
-  }
-  100%{
-    z-index: -1;
   }
 }  
 @-webkit-keyframes sliderRightEffectRight {
@@ -345,15 +330,10 @@ button:hover{
     left: 368px; 
     opacity: 0.5;
     -webkit-transform: scaleY(1);
-    z-index: 0;
   }
-  99%{
+  100%{
     left: 590px;
     opacity: 0;
     -webkit-transform: scaleY(1.2);
-    z-index: 0;
-  }
-  100%{
-    z-index: -1;
   }
 }
