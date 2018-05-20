@@ -3,11 +3,12 @@
 	background-image: url(../images/mainBackgroundImage.png);
 	width: 100%;
   height: 900px; 
-  padding-top: 300px;
+  padding-top: 200px;
 }
 .leftButton {
 	float:left;
 	width: 20%;
+  height:300px;
 }
 
 .leftButton button{
@@ -41,6 +42,7 @@
 .rightButton{
 	float: right;
 	width: 20%;
+  height:300px;
 }
 .rightButton p{
 	background-image: url(../images/forwardArrow.png);
@@ -62,7 +64,7 @@ button{
   width: 153px;
   height: 68px;
   display: block;
-  margin:50px auto auto;
+  margin:113px auto auto;
   border-radius: 4px;
 }
 button:hover{
@@ -81,13 +83,9 @@ button:hover{
 }
 .sliderField{
 	width: 585px;
-	margin: 0 auto;
+  height: 300px;
+  margin: auto;
   position: relative;
-}
-.boyIconWrapper{
-  width: 139px;
-  height: 141px;
-  position:absolute;
 }
 .boyIcon{
 	border-style: solid;
@@ -102,11 +100,8 @@ button:hover{
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 76.5px; 
 }
-.boyIconLast{
-  display: none;
-}
-
 .boyWithoutScarf{
 	display: block;
 	position: absolute;
@@ -204,17 +199,23 @@ button:hover{
 
   left: 590px;
   opacity: 0;
+  z-index: -1;
 }
 @keyframes sliderLeftEffectLeft {
   0% {
     left: 0px; 
     opacity: 0.5;
     transform: scaleY(1);
+    z-index: 0;
   }
-  100%{
+  99%{
     left: -210px;
     opacity: 0;
     transform: scaleY(1.2);
+    z-index: 0;
+  }
+  100%{
+    z-index: -1;
   }      
 }
 @-webkit-keyframes sliderLeftEffectLeft {
@@ -222,12 +223,17 @@ button:hover{
     left: 0px; 
     opacity: 0.5;
     -webkit-transform: scaleY(1);
+    z-index: 0;
   }
-  100%{
+  99%{
     left: -210px;
     opacity: 0;
     -webkit-transform: scaleY(1.2);
+    z-index: 0;
   }      
+  100%{
+    z-index: -1;
+  }   
 }
 .boyIcon.iconSixthPosition{
   animation-name: sliderLeftEffectRight;
@@ -315,17 +321,23 @@ button:hover{
 
   left: -210px;
   opacity: 0;
+  z-index: -1;
 }
 @keyframes sliderRightEffectRight {
   0% {
     left: 368px; 
     opacity: 0.5;
     transform: scaleY(1);
+    z-index: 0;
   }
-  100%{
+  99%{
     left: 590px;
     opacity: 0;
     transform: scaleY(1.2);
+    z-index: 0;
+  }
+  100%{
+    z-index: -1;
   }
 }  
 @-webkit-keyframes sliderRightEffectRight {
@@ -333,10 +345,15 @@ button:hover{
     left: 368px; 
     opacity: 0.5;
     -webkit-transform: scaleY(1);
+    z-index: 0;
   }
-  100%{
+  99%{
     left: 590px;
     opacity: 0;
     -webkit-transform: scaleY(1.2);
+    z-index: 0;
+  }
+  100%{
+    z-index: -1;
   }
 }
