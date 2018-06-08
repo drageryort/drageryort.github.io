@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
+body{
+	background-color: rgb(229,229,229);
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.clearFloat:after{
+	content: "";	
+	clear: both;
+	display:block;
+}
+header{
+	background-color: rgb(54, 54, 54);
+  	height: 81px;
+  	margin: 0 auto;
+}
+.headerTopLine{
+	width: 81.25%;
+	margin: 0 auto;
+	padding-top: 16px;
+}
+.logo {
+	width: 50px;
+	height: 50px;
+	float: left;
+	display: block;
+}
+.navMenu{
+	margin-left: 27.3%;
+	width: 34.7%;
+	float: left;
+}
+.navMenu ul{
+	padding-left: 0px;
+	margin-top: 16px;
+}
+.navMenu li{
+	float:left;
+	list-style: none;
+	padding-left:3.5%; 
+}
+.navMenu li a{
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-align: left;
+	text-decoration: none;
+}
+.headerButtons{
+	float: right;
+	width: 19.65%;
+	font-size: 16px;
+	font-family: "Open Sans";
+	padding-top: 4px;
+}
+.loginButton {
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	color:rgb(110, 52, 233);
+	width: 39.14%;
+	height: 42px;
+	cursor: pointer;
+	font-family: "Open Sans";
+}
+.hireButton {
+	border-radius: 5px;
+	background-color: rgb(110, 52, 233);
+	border: none;
+	margin-left: 4.2%;
+	width: 54.8%;
+	height: 42px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-family: "Open Sans";
+}
+.yodaWritersBlock{
+  	background-image: url(../image/yodaWritersBackground.png);
+  	background-repeat: no-repeat;
+  	background-color: rgb(229, 229, 229); 
+	height: 939px; /* поправить */
+}
+.yodaWriters{
+	width: 81.25%;
+	margin: 0 auto;
+}
+.yodaWriters > h2{
+	width: 55.5%;
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.361;
+	text-align: left;	
+	height: 85px;
+	padding-top: 88px;
+	margin-top: 0px;
+}
+.yodaWriters p{
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	line-height: 1.375;
+	text-align: left;	
+	padding-top: 25px;
+}
+.writeMeForm{
+	margin-top: 38px;
+}
+.writeMeFormTypeEssay {
+	border-radius: 5px;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+	border: 0px;
+	padding: 0px;
+	width: 220px;
+	height: 42px;
+}
+.writeMeFormEmail{
+  	border-radius: 5px;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);	
+	box-sizing: border-box;	
+  	width: 220px;
+	height: 42px;
+	border:0px;
+	font-size: 14px;
+	font-family: "Open Sans";
+	line-height: 1;
+	text-align: left;
+	padding:0 0 0 10px;
+	margin-left: 15px;
+}
+.writeMeFormButton{
+	border-radius: 5px;
+	border: 0px;
+	padding: 0px;
+	background-color: rgb(110, 52, 233);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+	box-sizing: border-box;
+	width: 220px;
+	height: 42px;
+  	font-size: 16px; 	
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.125;
+	text-align: center;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.yodaWritersList{
+	margin-top: 90px;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.15);  
+	height: 473px;
+}
+.yodaWritersListContent h2{
+	text-align: center;
+	font-size: 24px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.2;
+	padding-top: 43px;
+	text-transform: capitalize;
+}
+.yodaWritersListContent{
+	width: 63.2%;
+	margin: 0 auto;
+}
+.center .slick-center {
+	transform: scaleY(1.1);
+	z-index: 3;
+}
+.center .slick-active {
+	z-index: 2;
+}
+.center .slick-slide{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.slick-dots li button:before{
+	content: url("../image/dotForYodaWritersSliders.png");
+}
+.slick-dots li.slick-active button:before{    
+	content: url("../image/dotForYodaWritersSlidersActive.png");
+}
+.slick-prev:before
+{
+    content: url("../image/arrowLeft.png");
+}
+.slick-next:before
+{
+    content: url("../image/arrowRight.png");
+}
+.yodaWritersProfile{
+	border-radius: 8px;
+	background-color: rgb(255, 247, 240);
+	box-shadow: 0px 3px 9.6px 0.4px rgba(0, 0, 0, 0.15);
+	width: 245px;
+	height: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.yodaWritersProfilePhotoIcon{
+	display: inline-block;
+	float: left;
+}
+.yodaWritersProfileRateBlock{
+	clear: both;
+	content: "";
+	display:block;
+}
+.yodaWritersProfile .yodaWritersProfileRateBlock img{   /* поправить */
+	display: inline; 
+}
+.yodaWritersList .yodaWritersProfileAuthorName{
+	padding-top: 10px;
+	font-size: 15px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	font-weight: bold;
+	line-height: 1.2;
+}
+.yodaWritersProfileProperty{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+}
+.yodaWritersList .yodaWritersProfilePropertyAmount{
+	border-width: 1px;
+	border-color: rgb(242, 153, 74);
+	border-style: solid;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 255);
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+	padding: 9px 0px 0px 7px;
+	display: inline-block;
+	font-size: 13px;
+	font-family: "Open Sans";
+	color: rgb(242, 153, 74);
+	font-weight: bold;
+	line-height: 1.2;
+}
+.yodaWritersProfilePropertyAmount.firstProperty{
+	margin-left: 45px;
+}
+.yodaWritersProfilePropertyAmount.secondProperty{
+	margin-left: 44px;
+}	
+.yodaWritersProfile button{
+	border-radius: 5px;
+	background-color: rgb(242, 153, 74);
+	box-shadow: 0px 4px 8.37px 0.63px rgba(0, 0, 0, 0.2);
+	width: 186px;
+	height: 39px;
+	border: none;
+	color: rgb(255, 255, 255);
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	margin-top: 25px;
+}
+.howItWorksBlockWrapper{
+	background-image: url(../image/howItWorksBackground.png);
+	height: 505px;
+	padding-top: 115px;
+	background-repeat: no-repeat;
+}
+.howItWorksBlock{
+	color: white;
+	width: 81.25%;
+    margin: 0 auto;
+}
+.howItWorksBlockTitle{
+	float: left;
+	width: 33%;
+}
+.howItWorksBlockTitle h2{
+	font-size: 44px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	text-transform: capitalize;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 19px;
+}
+.howItWorksBlockTitle img{
+	display: block;
+}
+.howItWorksBlockPoints{
+	float:left;
+	width: 67%;
+}
+.howItWorksBlockPointsElement{
+	width: 50%;
+	float: left;
+} 
+.howItWorksBlockPointsElementNumber{
+	width: 20%;
+	margin-right: 5%;
+	float:left;
+}
+.howItWorksBlockPointsElementNumber p{
+	font-size: 96px;
+	font-family: "Open Sans";
+	color: rgba(255, 255, 255, 0.302);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: right;
+	margin: 0px;
+}
+.howItWorksBlockPointsElementContent{
+	width: 70%;	
+	margin-right: 5%;
+	float:left;
+}
+.howItWorksBlockPointsElementContent h3{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(229, 229, 229);
+	font-weight: 900;
+	line-height: 1.2;
+	text-transform: capitalize;
+}
+.howItWorksBlockPointsElementContent p{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(229, 229, 229);
+	font-weight: 100;
+	line-height: 1.2;
+}
+.whyUsBlockWrapper{
+	background-color: rgb(229,229,229);	
+}
+.whyUsBlock{
+	padding-top: 90px;
+	width: 81.25%;
+    margin: 0 auto;
+    padding-bottom: 115px;
+}
+.whyUsBlockTitle h2{
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	font-weight: bold;
+	line-height: 1.2;	
+	text-align: center;
+	text-transform: capitalize;
+	margin: 0;
+}
+.whyUsBlockTitle img{
+	display: block;
+	margin: 8px auto 0;
+}
+.whyUsBlockTitle p{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	margin: 21px auto 0;
+	width: 519px;
+	height: 82px;
+}
+.whyUsElementsBlock{
+	margin-top: 47px;
+}
+.whyUsElement{
+	width: 25%;
+	box-sizing: border-box;
+	padding-right: 1.5%;
+	float:left;
+}
+.whyUsElement:last-child{
+	padding-right: 0;
+}
+.whyUsElement img{
+	display: block;
+	margin: 0 auto;
+}
+.whyUsElement h3{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+}
+.whyUsElement p{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	line-height: 1.2;
+	text-align: center;
+}
+.buyEssayForSaleBlockWrapper{
+	background-image: url(../image/buyEssayForSaleTodayBackground.png);
+	background-repeat: no-repeat;
+	padding-top: 140px;
+}
+.buyEssayForSaleBlock{
+	width: 81.25%;
+	margin: 0 auto;
+	padding-top: 39px;
+	border-radius: 5px;
+  	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+.buyEssayForSaleBlock h2{
+	text-align: center;
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(54, 54, 54);
+	font-weight: bold;
+	line-height: 0.389;	
+}
+.buyEssayForSaleBlock > img{
+	display:block;
+	margin:9px auto 38px;
+}
+.buyEssayForSaleBlock form{
+	width:50%;
+	margin: 0 auto 51px;
+}
+.buyEssayForSaleBlockElement{
+	width:50%;
+	float: left;
+}
+.buyEssayForSaleBlockElement p{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1;
+	text-align: left;
+}
+.buyEssayForSaleBlockElement select{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(147, 147, 147);	
+	text-transform: capitalize;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+	width: 94.86%;
+	height: 39px;
+	margin-bottom: 38px;
+}
+.buyEssayForSaleBlockElement option{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(147, 147, 147);
+	line-height: 1;
+	text-align: left;
+	text-transform: capitalize;
+}
+.writeMeEssayButton{
+	width: 130px;
+	margin: 38px auto 51px;
+	border-radius: 5px;
+	background-color: rgb(110, 52, 233);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: rgb(254, 254, 254);
+	font-weight: bold;
+	line-height: 0.875;
+	text-align: center;
+	display: block;
+  	height: 42px;
+}
+.paymentSystems{
+	width: 35.61%;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+.paymentSystems img{
+	margin-right: 22px;
+}
+.paymentSystems a:last-child img{
+	margin-right: 0;
+}
+.ourCustomersSayAboutWritersBlockWrapper{
+	background-image: url(../image/ourCustomersSayAboutWritersBlockBackground.png);
+	background-repeat: no-repeat;
+}
+.ourCustomersSayAboutWritersBlock{
+	width: 67.15%;
+	margin: 132px auto 0;
+	height: 636px;
+}
+.ourCustomersSayAboutWritersBlock h2{
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	margin:0;
+	padding-top: 60px;
+}
+.ourCustomersComment{
+	width:376px;
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	height: 296px;
+	margin-top: 125px;
+	margin-bottom: 40px;
+}
+.centers{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.centers .slick-center {
+	transform: scaleY(1.1);
+	z-index: 3;
+	opacity: 1 !important;
+}
+.centers .slick-slide{
+	margin-left: 0px;
+	margin-right: 0px;
+	opacity: 0.5;
+}
+.ourCustomersComment > img{
+	position: absolute;
+	bottom: 255px;
+	left: 126px;
+}
+.ourCustomersComment p{
+	margin:0;
+	text-align: center;
+	font-size: 15px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1.4;
+}
+.ourCustomersComment .ourCustomersNickName{
+	padding-top: 35px;
+}
+.ratesByOurCustomers{
+	margin: 5px auto 15px;
+	width: 110px;
+}
+.ourCustomersComment .ratesByOurCustomers img{
+	display: inline;
+}
+.ourCustomersComment .customerComment{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.571;
+	text-align: center;
+	height: 99px;
+	width: 376px;
+	margin: 0 auto 25px;
+} 
+.ourCustomersCommentOrderDetails{
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+.ourCustomersCommentOrderDetails p{
+	font-size: 12px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.833;
+	text-align: left;
+}
+.ourCustomersCommentWriterInformation{
+	width: 40%;
+	float: left;
+}
+.ourCustomersCommentWriterInformation img{
+	float: left
+}
+.ourCustomersCommentWriterInformation a{
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: rgb(47, 128, 237);
+  text-decoration: underline;
+  line-height: 1.833;
+  text-align: center;
+}
+.ourCustomersCommentWriterInformation p{
+  font-size: 10px;
+  font-family: "Open Sans";
+  color: rgb(51, 51, 51);
+  line-height: 2.2;
+  text-align: left;
+}
+.slick-dots li button:before{
+	content: url("../image/dotForYodaWritersSliders.png");
+}
+.slick-dots li.slick-active button:before{    
+	content: url("../image/dotForYodaWritersSlidersActive.png");
+}
+.slicks-prev:before
+{
+    content: url("../image/arrowLeftCircle.png");
+}
+.slicks-next:before
+{
+    content: url("../image/arrowRightCircle.png");
+}
+.essayPapersForSaleOnlineBlock{
+	width: 53.61%;
+	margin: 0 auto 32px;
+}
+.essayPapersForSaleOnlineBlock h2{
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 80px;
+}
+.essayPapersForSaleOnlineBlock img{
+	display: block;
+	margin: 12px auto 38px;
+}
+.essayPapersForSaleOnlineBlock p{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.444;
+}
+.essayPapersForSaleOnlineBlock .mainBlockImage{
+	display: block;
+	margin: 25px auto 37px;
+	width: 100%
+}
+.whyTakeAdvantageOfSuchAnOfferBlockWrapper{
+	background-image: url(../image/whyTakeAdvantageOfSuchAnOfferBlockBackground.png);
+	background-repeat: no-repeat;
+	padding-top: 190px;
+}
+.whyTakeAdvantageOfSuchAnOfferBlock{
+	width: 81.25%;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+.whyTakeAdvantageOfSuchAnOfferBlockContent{
+	width: 62.24%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+.whyTakeAdvantageOfSuchAnOfferBlockContent h2{
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-align: center;
+	padding-top: 60px;
+}
+.whyTakeAdvantageOfSuchAnOfferBlockContent img{
+	display: block;
+	margin: 12px auto 38px;
+}
+.essayPapersForSaleOnlineBlockImage{
+	width: 100%;	
+}
+.whyTakeAdvantageOfSuchAnOfferBlockContent p{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.444;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.whyTakeAdvantageOfSuchAnOfferBlockContent ul{
+	list-style-image:url(../image/purpleListCirclePoint.png);
+}
+.whyTakeAdvantageOfSuchAnOfferBlockContent li {
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.essayPapersForSaleOnlineBlockImage {
+	display: block;
+	margin: 33px auto 37px;
+}
+.gaingAccessToALongListOfBenefitsBlockWrapper{
+
+}
+.gaingAccessToALongListOfBenefitsBlock{
+	width: 53.61%;
+	margin: 100px auto 100px;
+}
+.gaingAccessToALongListOfBenefitsBlock h2{
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-align: center;
+}
+.gaingAccessToALongListOfBenefitsBlock img{
+	display: block;
+	margin: 12px auto 38px;
+}
+.gaingAccessToALongListOfBenefitsBlock p{
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.444;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.gaingAccessToALongListOfBenefitsBlock ul{
+	list-style-image:url(../image/purpleListCirclePoint.png);
+}
+.gaingAccessToALongListOfBenefitsBlock li {
+	font-size: 18px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.frequentlyAskedQuestionsBlockWrapper {
+	background-image: url(../image/frequentlyAskedQuestionsBlockBackground.png);
+	background-repeat: no-repeat;
+}
+.frequentlyAskedQuestionsBlock{
+	width: 81.25%;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 120px;
+}
+.frequentlyAskedQuestionsBlock h2{
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+.frequentlyAskedQuestionsBlock > img{
+	display: block;
+	margin: 12px auto 46px;
+}
+.frequentlyAskedQuestionsBlockQuestions{
+	border-radius: 4px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+	width: 83.08%;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 auto 30px;
+	position: relative;
+	cursor: pointer;  
+}
+.frequentlyAskedQuestionsBlockQuestions.clicked{
+	min-height: 40px;
+	height: 100%;
+	overflow: visible;
+}
+.frequentlyAskedQuestionsBlockQuestions .frequentlyAskedQuestionsBlockButton{
+	display: block;
+	position: absolute;
+	top: 18px;
+	right: 14px;
+	z-index: 5;
+	background-image: url(../image/arrowDown.png);
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 12px;
+}
+.frequentlyAskedQuestionsBlockQuestions.clicked .frequentlyAskedQuestionsBlockButton{
+	display: block;
+	position: absolute;
+	top: 18px;
+	right: 14px;
+	z-index: 5;
+	background-image: url(../image/arrowUp.png);
+	background-repeat: no-repeat;
+	height: 8px;
+	width: 12px;
+}
+.frequentlyAskedQuestionsBlockQuestions p:first-child{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1;
+	text-align: left;
+	padding: 0 35px 0 14px;
+}
+.frequentlyAskedQuestionsBlockQuestions.clicked p:first-child{
+	padding-top: 14px;
+}
+
+.frequentlyAskedQuestionsBlockQuestions.clicked p:last-child{
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.571;
+	text-align: left;
+	padding: 30px 35px 14px 14px;
+}
+.whatAreYouWaitingForBlock{
+	width: 81.25%;
+	margin: 105px auto 100px;
+}
+.whatAreYouWaitingForBlock h2{
+	width: 55.5%;
+	font-size: 36px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	line-height: 1.361;
+	text-align: left;	
+	height: 85px;
+	margin: 0;
+}
+.whatAreYouWaitingForBlock p{
+	font-size: 16px;
+	font-family: "Open Sans";
+	color: rgb(51, 51, 51);
+	line-height: 1.375;
+	text-align: left;	
+	padding-top: 25px;
+	margin: 0;
+}
+.whatAreYouWaitingForBlock form{
+	margin-top: 38px;
+}
+.whatAreYouWaitingForBlock select{
+	border-radius: 5px;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+	border: 0px;
+	padding: 0px;
+	width: 220px;
+	height: 42px;
+}
+.whatAreYouWaitingForBlockEmail{
+  	border-radius: 5px;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);	
+	box-sizing: border-box;	
+  	width: 220px;
+	height: 42px;
+	border:0px;
+	font-size: 14px;
+	font-family: "Open Sans";
+	line-height: 1;
+	text-align: left;
+	padding:0 0 0 10px;
+	margin-left: 15px;
+}
+.whatAreYouWaitingForBlockButton{
+	border-radius: 5px;
+	border: 0px;
+	padding: 0px;
+	background-color: rgb(110, 52, 233);
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+	box-sizing: border-box;
+	width: 220px;
+	height: 42px;
+  	font-size: 16px; 	
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.125;
+	text-align: center;
+	margin-left: 15px;
+	cursor: pointer;
+}
+footer{
+	background-color: rgb(93, 93, 93);
+}
+.footerContentBlock{
+	width: 972px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+.footerLogoBlock{
+	width: 40%;
+	float:left;
+}
+.footerLogoBlock p{
+	font-size: 11px;
+	font-family: "Open Sans";
+	color: rgb(205, 203, 203);
+	line-height: 1.2;
+	text-align: left;
+	margin-top: 15px;
+	padding-right: 120px;
+}
+.footerPoliciesBlock{
+	width: 20%;
+	float:left;
+}
+.footerCategoriesBlock{
+	width: 20%;
+	float:left;
+}
+.footerPaymentBlock{
+	width: 20%;
+	float:left;
+}
+.footerSubmenu {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(205, 203, 203);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	margin-top: 18px;
+	margin-bottom: 10px;
+}
+.footerContentBlock a{
+	font-size: 12px;
+	font-family: "Open Sans";
+	color: rgb(205, 203, 203);
+	line-height: 1.2;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.footerContentBlock .footerPaymentBlock a{
+	display: inline;
+}
+.footerPaymentBlock p:nth-child(3){
+	margin-top: 10px;
+}
