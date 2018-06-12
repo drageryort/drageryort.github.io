@@ -77,8 +77,9 @@ header{
 .yodaWritersBlock{
   	background-image: url(../image/yodaWritersBackground.png);
   	background-repeat: no-repeat;
+  	background-position-x: center;  
   	background-color: rgb(229, 229, 229); 
-	height: 939px; /* поправить */
+	height: 939px;
 }
 .yodaWriters{
 	width: 81.25%;
@@ -272,6 +273,7 @@ header{
 	height: 505px;
 	padding-top: 115px;
 	background-repeat: no-repeat;
+	background-position-x: center; 
 }
 .howItWorksBlock{
 	color: white;
@@ -407,6 +409,7 @@ header{
 .buyEssayForSaleBlockWrapper{
 	background-image: url(../image/buyEssayForSaleTodayBackground.png);
 	background-repeat: no-repeat;
+	background-position-x: center; 
 	padding-top: 140px;
 }
 .buyEssayForSaleBlock{
@@ -495,6 +498,7 @@ header{
 .ourCustomersSayAboutWritersBlockWrapper{
 	background-image: url(../image/ourCustomersSayAboutWritersBlockBackground.png);
 	background-repeat: no-repeat;
+	background-position-x: center; 
 }
 .ourCustomersSayAboutWritersBlock{
 	width: 67.15%;
@@ -648,6 +652,7 @@ header{
 .whyTakeAdvantageOfSuchAnOfferBlockWrapper{
 	background-image: url(../image/whyTakeAdvantageOfSuchAnOfferBlockBackground.png);
 	background-repeat: no-repeat;
+	background-position-x: center; 
 	padding-top: 190px;
 }
 .whyTakeAdvantageOfSuchAnOfferBlock{
@@ -738,6 +743,7 @@ header{
 .frequentlyAskedQuestionsBlockWrapper {
 	background-image: url(../image/frequentlyAskedQuestionsBlockBackground.png);
 	background-repeat: no-repeat;
+	background-position-x: center; 
 }
 .frequentlyAskedQuestionsBlock{
 	width: 81.25%;
@@ -886,7 +892,7 @@ footer{
 	background-color: rgb(93, 93, 93);
 }
 .footerContentBlock{
-	width: 972px;
+	width: 67.5%;
 	margin: 0 auto;
 	padding-top: 15px;
 }
