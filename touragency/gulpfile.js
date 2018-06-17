@@ -14,7 +14,7 @@ var gulp = require ('gulp'),
 
 gulp.task ('css', function (){
 	return gulp.src('app/css/*.css')
-    .pipe(concatCss('stylesheet-min.css'))
+    .pipe(concatCss('all-stylesheet-min.css'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('dist/css/'));
 })
@@ -22,7 +22,7 @@ gulp.task ('css', function (){
 
 gulp.task('scripts', function() {
   return gulp.src('app/js/*.js')
-    .pipe(concat('scripts-min.js'))
+    .pipe(concat('all-scripts-min.js'))
     .pipe(uglyfly())
     .pipe(gulp.dest('dist/js/'));
 });
