@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soddy Georgia</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/all-stylesheet-min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="image/logo.png" alt="logo">
+				</div>
+				<div class="col-lg-offset-3 col-lg-5 ">
+					<ul class="navMenu">
+						<li class="navMenuTop"><a href="#">Главная</a></li>
+						<li class="navMenuTop"><a href="#">Направления</a>
+							<ul class="directionList clearFloat">
+								<li class="directionListTop"><a href="#">море</a>
+									<ul class="directionListTitle">				
+										<li><a href="#" id="test">Анаклия</a></li>
+										<li><a href="#">Батуми</a></li>
+										<li><a href="#">Гонио</a></li>
+										<li><a href="#">Квариати</a></li>
+										<li><a href="#">Кобулеты</a></li>
+										<li><a href="#">Сарпи</a></li>
+										<li><a href="#">Уреки</a></li>
+									</ul>
+								</li>
+								<li class="directionListTop"><a href="#">горы</a>
+									<ul class="directionListTitle">
+										<li><a href="#">Бакуриани</a></li>
+										<li><a href="#">Боржоми</a></li>
+										<li><a href="#">Годеридзи</a></li>
+										<li><a href="#">Гудаури</a></li>
+										<li><a href="#">Местиа</a></li>
+										<li><a href="#">Стефанцминда</a></li>
+										<li><a href="#">Ушгули</a></li>
+									</ul>
+								</li>				
+								<li class="directionListTop"><a href="#">города</a>
+									<ul class="directionListTitle">
+										<li><a href="#">Ахалцихе</a></li>
+										<li><a href="#">Зугдиди</a></li>
+										<li><a href="#">Кутаиси</a></li>
+										<li><a href="#">Мцхета</a></li>
+										<li><a href="#">Сигнаги</a></li>
+										<li><a href="#">Тбилиси</a></li>
+										<li><a href="#">Телави</a></li>
+									</ul>
+								</li>
+								<li class="directionListTop"><a href="#">места</a>
+									<ul class="directionListTitle">
+										<li><a href="#">Мартвили</a></li>
+										<li><a href="#">Саирме</a></li>
+										<li><a href="#">Сурами</a></li>
+										<li><a href="#">Тушети</a></li>
+										<li><a href="#">Цхалтубо</a></li>
+									</ul>										
+								</li>
+							</ul>
+						</li>
+						<li class="navMenuTop"><a href="#">Страховка</a></li>
+						<li class="navMenuTop"><a href="#">Авиа</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<content class="content">
+		<div class="container" id="tabs">
+			<ul class="row contentMenu">
+				<li class="col-lg-3">
+					<a href="#tabs-1">
+						<img src="image/houseIcon.png" alt="housIcon">
+						<span> жилье </span>
+					</a>	
+				</li>
+				<li class="col-lg-3">
+					<a href="#tabs-2">
+						<img src="image/tourIcon.png" alt="tourIcon">
+						<span> туры </span>
+					</a>
+				</li>
+				<li class="col-lg-3">
+					<a href="#tabs-3">
+						<img src="image/excursionIcon.png" alt="excursionIcon">
+						<span> экскурсии </span>					
+					</a>	
+				</li>
+			    <li class="col-lg-3">
+			    	<a href="#tabs-4">
+						<img src="image/carIcon.png" alt="carIcon">
+						<span> авто </span>					
+					</a>
+			    </li>
+			</ul>				
+			<div id="tabs-1"></div>
+			<div id="tabs-2">
+				<form action="#" name="tourForm" method="post">
+					<div class="row contentSubMenu">
+						<div class="col-lg-4">
+							<div class="calendar">
+								<img src="image/calendarIcon.png" alt="calendar">
+								<input type="text" id="datepicker" name="dateOfRestStarting" placeholder="дата начала тура" value="" required>
+							</div>	
+						</div>	
+						<div class="col-lg-4">
+							<div class="term">
+								<select name="periodOfRest" required>
+									<option value="" disabled selected >количество дней</option>
+									<option value="1-4">1-4 дней</option>
+									<option value="5-9">5-9 дней</option>
+									<option value="10+">10+ дней</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="subMenuSlider clearFloat">
+								<p>gel</p>
+								<p>
+									<input type="text" id="amount" name="minGelAmount" value="">
+								</p>
+								<div id="slider-range"></div>
+								<p>
+								  <input type="text" id="amount_1" name="maxGelAmount" value="">
+								</p>
+							</div>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-lg-2 extendedSearchTitle" onclick="dropDownExtendedMenu()">
+							<img src="image/dropDownArrow.png" alt="dropDown Arrow">
+							<span>Расширенный поиск</span>
+						</div>
+					</div>	
+					<div class="row extendedSearch">
+						<div class="col-lg-6">
+							<div class="extendedSearchBlock">
+								<p>тип тура</p>
+								<div class="row">
+									<div class="col-lg-6 ">
+										<ul>
+											<li><input type="checkbox" class="checkbox" id="alltypesOfRest" name="tripType" value="tripTypeAll">
+												<label for="alltypesOfRest">все</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="restOnTheCoast" name="tripType" value="tripTypeOnCoast">
+												<label for="restOnTheCoast">пляжные</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="restInMountain" name="tripType" value="tripTypeInMountain">
+												<label for="restInMountain">горно-лыжные</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="restForTreating" name="tripType" value="tripTypeTreating">
+												<label for="restForTreating">лечебные</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="tripsForMarriage" name="tripType" value="tripTypeMarriage">
+												<label for="tripsForMarriage">свадебные</label>
+											</li>	
+										</ul>
+									</div>
+									<div class="col-lg-6">
+										<ul>
+											<li><input type="checkbox" class="checkbox" id="extremalTrips" name="tripType" value="tripTypeExtreme">
+												<label for="extremalTrips">экстремальные</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="gastronomicTrips" name="tripType" value="tripTypeGastronomic">
+												<label for="gastronomicTrips">гастрономические</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="excursionTrips" name="tripType" value="tripTypeExcursion">
+												<label for="excursionTrips">экскурсионные</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="piligrimageTrips" name="tripType" value="tripTypePiligrim">
+												<label for="piligrimageTrips">паломнические</label>
+											</li>	
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-lg-6">
+							<div class="extendedSearchBlock">
+								<p>питание</p>
+								<div class="row">
+									<div class="col-lg-6">
+										<ul>
+											<li><input type="checkbox" class="checkbox" id="withoutFeeding" name="feeding" value="feedingNone">
+												<label for="withoutFeeding">не включено</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="bbFeeding" name="feeding" value="feedingBB">
+												<label for="bbFeeding">bb - только завтрак</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="hbFeeding" name="feeding" value="feedingHB">
+												<label for="hbFeeding">hb - завтрак и ужин</label>
+											</li>
+										</ul>
+									</div>
+									<div class="col-lg-6">
+										<ul>
+											<li><input type="checkbox" class="checkbox" id="fbFeeding" name="feeding" value="feedingFB">
+												<label for="fbFeeding">fb - полный пансион</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="aiFeeding" name="feeding" value="feedingAI">
+												<label for="aiFeeding">ai - все включено</label>
+											</li>
+											<li><input type="checkbox" class="checkbox" id="uaiFeeding" name="feeding" value="feedingUAI">
+												<label for="uaiFeeding">uai - ультра все</label>
+											</li>
+										</ul>								
+									</div>
+								</div>	
+							</div>
+						</div>				
+					</div>
+					<div class="row startButton">
+						<div class="col-lg-offset-5 col-lg-2">
+							<input type="submit" name="submit" value="подобрать">
+						</div>
+					</div>				
+				</form>			
+			</div>
+			<div id="tabs-3"></div>
+			<div id="tabs-4"></div>
+		</div>
+	</content>
+	<footer>
+	</footer>
+  	<script src="js/all-scripts-min.js"></script>
+</body>
+</html>
