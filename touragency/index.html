@@ -11,11 +11,11 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3 logo">
+				<div class="col-xs-12 col-sm-5 col-md-3 logo">
 					<img src="image/logo.png" alt="logo">
 				</div>
 				<div class="col-xs-12 col-sm-7 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-5 ">
-					<ul class="navMenu">
+					<nav class="navMenu">
 						<li class="navMenuTop"><a href="#">Главная</a></li>
 						<li class="navMenuTop"><a href="#" id="dropDownMenu">Направления</a>
 							<ul class="directionList clearFloat">
@@ -65,7 +65,7 @@
 						</li>
 						<li class="navMenuTop"><a href="#">Страховка</a></li>
 						<li class="navMenuTop"><a href="#">Авиа</a></li>
-					</ul>
+					</nav>		
 				</div>
 			</div>
 		</div>
@@ -73,28 +73,28 @@
 	<content class="content">
 		<div class="container" id="tabs">
 			<ul class="row contentMenu">
-				<li class="col-xs-6 col-sm-3 col-lg-3">
+				<li class="col-xs-6 col-sm-3">
 					<a href="#tabs-1">
 						<img src="image/houseIcon.png" alt="housIcon">
 						<img src="image/houseIconActive.png" alt="housIconActive">
 						<span> жилье </span>
 					</a>	
 				</li>
-				<li class="col-xs-6 col-sm-3 col-lg-3">
+				<li class="col-xs-6 col-sm-3">
 					<a href="#tabs-2">
 						<img src="image/tourIcon.png" alt="tourIcon">
 						<img src="image/tourIconActive.png" alt="tourIconActive">						
 						<span> туры </span>
 					</a>
 				</li>
-				<li class="col-xs-6 col-sm-3 col-lg-3">
+				<li class="col-xs-6 col-sm-3">
 					<a href="#tabs-3">
 						<img src="image/excursionIcon.png" alt="excursionIcon">
 						<img src="image/excursionIconActive.png" alt="excursionIconActive">					
 						<span> экскурсии </span>					
 					</a>	
 				</li>
-			    <li class="col-xs-6 col-sm-3 col-lg-3">
+			    <li class="col-xs-6 col-sm-3">
 			    	<a href="#tabs-4">
 						<img src="image/carIcon.png" alt="carIcon">
 						<img src="image/carIconActive.png" alt="carIconActive">
@@ -102,17 +102,25 @@
 					</a>
 			    </li>
 			</ul>				
-			<div id="tabs-1"></div>
+			<div id="tabs-1">
+				<div class="row">	
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 underConstructionBlock">
+						<div>
+							<img src="image/underConstruction.png" alt="раздел в разработке">
+						</div>
+					</div>
+				</div>
+			</div>
 			<div id="tabs-2">
 				<form action="#" name="tourForm" method="post">
 					<div class="row contentSubMenu">
-						<div class="col-sm-4 col-lg-4 contentSubMenuBlock">
+						<div class="col-sm-4 contentSubMenuBlock">
 							<div class="calendar">
 								<img src="image/calendarIcon.png" alt="calendar">
 								<input type="text" id="datepicker" name="dateOfRestStarting" placeholder="дата начала тура" value="" required>
 							</div>	
 						</div>	
-						<div class="col-sm-4 col-lg-4 contentSubMenuBlock">
+						<div class="col-sm-4 contentSubMenuBlock">
 							<div class="term">
 								<select name="periodOfRest" required>
 									<option value="" disabled selected >количество дней</option>
@@ -122,7 +130,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-sm-4 col-lg-4 contentSubMenuBlock">
+						<div class="col-sm-4 contentSubMenuBlock">
 							<div class="subMenuSlider clearFloat">
 								<p>gel</p>
 								<p>
@@ -144,11 +152,11 @@
 						</div>
 					</div>	
 					<div class="row extendedSearch">
-						<div class="col-sm-6 col-md-6 col-lg-6 extendedSearchBlock">
+						<div class="col-sm-6 extendedSearchBlock">
 							<div class="extendedSearchElement">
 								<p>тип тура</p>
 								<div class="row">
-									<div class="col-md-6 col-lg-6 ">
+									<div class="col-md-6">
 										<ul>
 											<li><input type="checkbox" class="checkbox" id="alltypesOfRest" name="tripType" value="tripTypeAll">
 												<label for="alltypesOfRest">все</label>
@@ -167,7 +175,7 @@
 											</li>	
 										</ul>
 									</div>
-									<div class="col-md-6 col-lg-6">
+									<div class="col-md-6">
 										<ul>
 											<li><input type="checkbox" class="checkbox" id="extremalTrips" name="tripType" value="tripTypeExtreme">
 												<label for="extremalTrips">экстремальные</label>
@@ -186,11 +194,11 @@
 								</div>
 							</div>	
 						</div>
-						<div class="col-sm-6 col-md-6 col-lg-6 extendedSearchBlock">
+						<div class="col-sm-6 extendedSearchBlock">
 							<div class="extendedSearchElement">
 								<p>питание</p>
 								<div class="row">
-									<div class="col-md-6 col-lg-6">
+									<div class="col-md-6">
 										<ul>
 											<li><input type="checkbox" class="checkbox" id="withoutFeeding" name="feeding" value="feedingNone">
 												<label for="withoutFeeding">не включено</label>
@@ -203,7 +211,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="col-md-6 col-lg-6">
+									<div class="col-md-6">
 										<ul>
 											<li><input type="checkbox" class="checkbox" id="fbFeeding" name="feeding" value="feedingFB">
 												<label for="fbFeeding">fb - полный пансион</label>
@@ -227,8 +235,24 @@
 					</div>				
 				</form>			
 			</div>
-			<div id="tabs-3"></div>
-			<div id="tabs-4"></div>
+			<div id="tabs-3">
+				<div class="row">	
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 underConstructionBlock">
+						<div>
+							<img src="image/underConstruction.png" alt="раздел в разработке">
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div id="tabs-4">
+				<div class="row">	
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 underConstructionBlock">
+						<div>
+							<img src="image/underConstruction.png" alt="раздел в разработке">
+						</div>
+					</div>
+				</div>						
+			</div>
 		</div>
 	</content>
 	<footer>
