@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/all-stylesheet-min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper clearFloat">
+		<aside>
+			<form action="" class="sideBarForm">
+				<p>
+					choose category
+				</p>
+				<select name="chooseCategory" id="chooseCategory">
+					<option value="bestMatch">best match</option>
+					<option value="anyMatch">any match</option>
+				</select>
+				<ul class="chooseSubcategory"> choose subcategory
+					<li><input type="checkbox" name="subcategory" value="allSubcategories">all subcategories</li>
+					<li><input type="checkbox" name="subcategory" value="dataEntry">data entry (1 306)</li>
+					<li><input type="checkbox" name="subcategory" value="personalAssistant">personal assistant (1 907)</li>
+					<li><input type="checkbox" name="subcategory" value="WebResearch">web research (972)</li>
+					<li><input type="checkbox" checked name="subcategory" value="emailResponseHandling">email response handling (80)</li>
+					<li><input type="checkbox" checked name="subcategory" value="transcription">transcription (307)</li>
+					<li><input type="checkbox" checked name="subcategory" value="otherAdministrativeSupport">other - administrative <span>support</span></li>
+				</ul>
+				<ul class="clientRating"> client rating
+					<li><input name="rate" type="radio" checked value="anyRating">Any stars</li>
+					<li><input name="rate" type="radio" value="5starsRating">5 stars (930)</li>
+					<li><input name="rate" type="radio" value="4.5starsRating">4.5 stars and Up (2 591)</li>
+					<li><input name="rate" type="radio" value="4starsRating">4 stars and Up (1 546)</li>
+					<li><input name="rate" type="checkbox" value="unratedFreelancers" checked><span>Include unrated freelancers (1 784)</span></li>
+				</ul>
+				<p>
+					budget
+				</p>
+				<select name="budget" id="budgetSelect">
+					<option value="anyBudget" selected>any budget</option>
+					<option value="any" >any ...</option>
+				</select>
+				<p>
+					delivery
+				</p>
+				<select name="delivery" id="deliverySelect">
+					<option value="anyDelivery">any delivery</option>
+					<option value="any" selected>any ...</option>
+				</select>
+				<p>
+					location
+				</p>
+				<select name="location" id="locationSelect">
+					<option value="anyLocation" selected="">any location</option>
+					<option value="any">any ...</option>
+				</select>												
+			</form>
+		</aside>		
+		<main id="main">
+		</main>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="data.json"></script>
+	<script src="js/all-scripts-min.js"></script>
+</body>
+</html>
